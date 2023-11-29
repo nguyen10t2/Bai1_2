@@ -54,6 +54,18 @@ int main(){
         if (a[i]<min_gtle) min_gtle = a[i];
      }
    }
+   if (min_gtchan == oo){
+      min_gtchan = 0;
+   }
+   if (max_gtchan == -oo){
+      max_gtchan = 0;
+   }
+   if (min_gtle == oo){
+      min_gtle = 0;
+   }
+   if (max_gtle == -oo){
+      max_gtle = 0;
+   }
    printf("\nTổng, min, max của các phần tử có giá trị chẵn là: %d, %d, %d",tong_gtchan,min_gtchan,max_gtchan);
    printf("\nTổng, min, max của các phần tử có giá trị lẻ là: %d, %d, %d",tong_gtle,min_gtle,max_gtle);
 }
